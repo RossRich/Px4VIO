@@ -1,4 +1,4 @@
-#include "../../include/PX4_realsense_bridge/PX4_realsense_bridge.h"
+#include "PX4_realsense_bridge/PX4_realsense_bridge.h"
 
 using namespace bridge;
 
