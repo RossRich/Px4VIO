@@ -11,5 +11,10 @@ plugin_blacklist:
 - fake_gps
 - px4flow
 - global_position
+- landing_target
+- wind_estimation
+- mocap_pose_estimate
+- hil
+- camera
 plugin_whitelist: []
 #- 'sys_*'
