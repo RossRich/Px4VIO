@@ -14,7 +14,7 @@ conn:
 
 # sys_status
 sys:
-  min_voltage: 10.0   # diagnostics min voltage
+  min_voltage: 15.0   # diagnostics min voltage
   disable_diag: false # disable all sys_status diagnostics, except heartbeat
 
 # sys_time
