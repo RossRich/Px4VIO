@@ -1,5 +1,4 @@
 #include "PX4_realsense_bridge/PX4_realsense_bridge.h"
-
 #include <atomic>
 #include <condition_variable>
 #include <mutex>
@@ -11,8 +10,8 @@ namespace bridge {
 PX4_Realsense_Bridge::PX4_Realsense_Bridge(const ros::NodeHandle &nh) : nh_(nh) {
 
   std::string inputTopic = "camera_t265/odom/sample_throttled";
-  if (!nh.getParam(ros::this_node::getName() + "/input_topic", inputTopic)) {
-    ROS_WARN("[PX4_Realsense_Bridge] Use default input topic \'%s\'", inputTopic.c_str());
+  if (!nh.getParam(ros::this_node::getName() + "/odom_topic", inputTopic)) {
+    ROS_WARN("[PX4_Realsense_Bridge] Use default odometry topic \'%s\'", inputTopic.c_str());
   }
 
   // initialize subscribers
